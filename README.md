@@ -34,12 +34,12 @@ Utilizar a crase nos permite poupar mais tempo durante a codificação/programa�
 ```
 // Este é um exemplo de código com crase
 
-document.write(`A soma de A + B é $(A+B)`);
+document.write(`A soma de A + B é ${A+B}`);
 
-document.write("O valor de A é $(A) e o valor de B é $(B));
+document.write("O valor de A é ${A} e o valor de B é ${B});
 ```
 
-Observando, para toda variável é necessário encapsulá-la (colocar dentro) na sintaxe ```$()```, para que esta funcione adequadamente. Outro fator que conta bastante é a clareza do código.
+Observando, para toda variável é necessário encapsulá-la (colocar dentro) na sintaxe ```${}```, para que esta funcione adequadamente. Outro fator que conta bastante é a clareza do código.
 
 Para além da utilização do ```document.write()``` temos o ```alert()```, que recebe a mesma esturura de texto, diferenciando apenas na saída vísual em tela. Um em texto o outro em caixa de alerta.
 
