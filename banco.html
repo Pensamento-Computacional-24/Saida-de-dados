@@ -6,15 +6,25 @@
     */
 
     // Entrada de Dados
-
+    const entrada = 350;
+    let montante = entrada;
 
 
     // Processamento
+    const v100 = parseInt(montante/100);
+    montante = montante % 100;
+    const v50 = parseInt(montante/50);
+    montante = montante % 50;
+    const v20 = parseInt(montante/20);
+    montante = montante % 20;
+    const v10 = parseInt(montante/10);
+    montante = montante % 10;
+    const v5 = parseInt(montante/5);
+    montante = montante % 5;
 
-
-
+    montante = parseFloat(montante).toFixed(2);
     // Saída de Dados
-    
+    document.write(`${v100}<br> ${v50}<br> ${v20}<br> ${v10}<br> ${v5}<br> entrada ${entrada} e montante ${montante}<br>`);
 
 
 </script>
