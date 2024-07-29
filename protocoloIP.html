@@ -9,15 +9,66 @@
     */
 
     // Entrada de Dados
-
+    let C1 = campo1 = 192;
+    let C2 = campo2 = 168;
+    let C3 = campo3 = 0;
+    let C4 = campo4 = 101;
 
 
     // Processamento
 
+    // Cálculos para obtenção do campo 192
+    const campo1f7 = parseInt( campo1 / (2**7) ); campo1 %= 2**7;
+    const campo1f6 = parseInt( campo1 / (2**6) ); campo1 %= 2**6;
+    const campo1f5 = parseInt( campo1 / (2**5) ); campo1 %= 2**5;
+    const campo1f4 = parseInt( campo1 / (2**4) ); campo1 %= 2**4;
+    const campo1f3 = parseInt( campo1 / (2**3) ); campo1 %= 2**3;
+    const campo1f2 = parseInt( campo1 / (2**2) ); campo1 %= 2**2;
+    const campo1f1 = parseInt( campo1 / (2**1) ); campo1 %= 2**1;
+    const campo1f0 = parseInt( campo1 / (2**0) ); campo1 %= 2**0;
 
+    // Cálculos para obtenção do campo 168
+    const campo2f7 = parseInt( campo2 / (2**7) ); campo2 %= 2**7;
+    const campo2f6 = parseInt( campo2 / (2**6) ); campo2 %= 2**6;
+    const campo2f5 = parseInt( campo2 / (2**5) ); campo2 %= 2**5;
+    const campo2f4 = parseInt( campo2 / (2**4) ); campo2 %= 2**4;
+    const campo2f3 = parseInt( campo2 / (2**3) ); campo2 %= 2**3;
+    const campo2f2 = parseInt( campo2 / (2**2) ); campo2 %= 2**2;
+    const campo2f1 = parseInt( campo2 / (2**1) ); campo2 %= 2**1;
+    const campo2f0 = parseInt( campo2 / (2**0) ); campo2 %= 2**0;
+
+    // Cálculos para obtenção do campo 0
+    const campo3f7 = parseInt( campo3 / (2**7) ); campo3 %= 2**7;
+    const campo3f6 = parseInt( campo3 / (2**6) ); campo3 %= 2**6;
+    const campo3f5 = parseInt( campo3 / (2**5) ); campo3 %= 2**5;
+    const campo3f4 = parseInt( campo3 / (2**4) ); campo3 %= 2**4;
+    const campo3f3 = parseInt( campo3 / (2**3) ); campo3 %= 2**3;
+    const campo3f2 = parseInt( campo3 / (2**2) ); campo3 %= 2**2;
+    const campo3f1 = parseInt( campo3 / (2**1) ); campo3 %= 2**1;
+    const campo3f0 = parseInt( campo3 / (2**0) ); campo3 %= 2**0;
+
+    // Cálculos para obtenção do campo 101
+    const campo4f7 = parseInt( campo4 / (2**7) ); campo4 %= 2**7;
+    const campo4f6 = parseInt( campo4 / (2**6) ); campo4 %= 2**6;
+    const campo4f5 = parseInt( campo4 / (2**5) ); campo4 %= 2**5;
+    const campo4f4 = parseInt( campo4 / (2**4) ); campo4 %= 2**4;
+    const campo4f3 = parseInt( campo4 / (2**3) ); campo4 %= 2**3;
+    const campo4f2 = parseInt( campo4 / (2**2) ); campo4 %= 2**2;
+    const campo4f1 = parseInt( campo4 / (2**1) ); campo4 %= 2**1;
+    const campo4f0 = parseInt( campo4 / (2**0) ); campo4 %= 2**0;
+
+    
 
     // Saída de Dados
-    
+    document.write(`
+    O endero IP ${C1}.${C2}.${C3}.${C4} possui os bit validos nos respectivos campos:<br>
+    <ul>
+        <li>192: ${campo1f0} ${campo1f1} ${campo1f2} ${campo1f3} ${campo1f4} ${campo1f5} ${campo1f6} ${campo1f7}</li>
+        <li>168: ${campo2f0} ${campo2f1} ${campo2f2} ${campo2f3} ${campo2f4} ${campo2f5} ${campo2f6} ${campo2f7}</li>
+        <li>0: ${campo3f0} ${campo3f1} ${campo3f2} ${campo3f3} ${campo3f4} ${campo3f5} ${campo3f6} ${campo3f7}</li>
+        <li>101: ${campo4f0} ${campo4f1} ${campo4f2} ${campo4f3} ${campo4f4} ${campo4f5} ${campo4f6} ${campo4f7}</li>
+    </ul>
+    `);
 
 
 </script>
