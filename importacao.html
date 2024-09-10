@@ -13,14 +13,29 @@
     */
 
     // Entrada de Dados
+    const headset = 100;
+    const drone = 300;
 
+    const icmsEstadual = 0.17;
+    const icmsNacional = 0.6;
 
 
     // Processamento
-
+    const valorFinalHeadset = headset + (headset * icmsNacional);
+    const valorFinalDrone = 
+        (drone
+        // Valor do drone: 300
+        + (drone * icmsNacional))
+        // Calculo do 60% sobre o drone: 300 * 60% = 180
+        + (((drone * icmsNacional) + drone) * icmsEstadual)
+        // Calculo do 17% sobre o resultado de 60% sobre o 300: ( (300 * 60%) + 300) * 17% = 81,60
 
 
     // Saída de Dados
+    document.write(`O valor dos produtos aumentarão de: <br>
+    Headset: R$ ${headset.toFixed(2)} para R$ ${valorFinalHeadset.toFixed(2)};<br>
+    Drone: R$ ${drone.toFixed(2)} para R$ ${valorFinalDrone.toFixed(2)}.
+    `);
     
 
 
