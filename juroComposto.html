@@ -9,15 +9,26 @@
     */
 
     // Entrada de Dados
-
+    const meses = 6;
+    const valorInicial = 100;
+    const juro = 0.12;
 
 
     // Processamento
+    let valor = valorInicial; // 1º Mês
 
+    // Forma não abreviada do cálculo
+    valor = valor + ( valor * juro ); // 2º Mês
+
+    // Forma abreviada do cálculo
+    valor += valor * juro; // 3º Mês
+    valor += valor * juro; // 4º Mês
+    valor += valor * juro; // 5º Mês
+    valor += valor * juro; // 6º Mês
 
 
     // Saída de Dados
-    
+    document.write(`Ao final de 6 meses o valor de R$ ${valorInicial.toFixed(2)} se tornará R$ ${valor.toFixed(2)}.`);
 
 
 </script>
