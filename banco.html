@@ -5,16 +5,26 @@
     Construa um algoritmo que retorne as quantidades dos respectivos valores de notas.
     */
 
-    // Entrada de Dados
+        // Entrada de Dados
+        const entrada = 350;
+        let montante = entrada;
 
 
+        // Processamento
+        const v100 = (montante - (montante = montante % 100))/100;
+        const v50 = (montante - (montante = montante % 50))/50;
+        const v20 = (montante - (montante = montante % 20))/20;
+        const v10 = (montante - (montante = montante % 10))/10;
+        const v5 = (montante - (montante = montante % 5))/5;
 
-    // Processamento
-
-
-
-    // Saída de Dados
-    
+        // Saída de Dados
+        document.write(`R$ ${entrada.toFixed(2)} se transformam em:<br>
+            ${v100} notas de R$ 100,00<br>
+            ${v50} notas de R$ 50,00<br>
+            ${v20} notas de R$ 20,00<br>
+            ${v10} notas de R$ 10,00<br>
+            ${v5} notas de R$ 5,00
+        `);
 
 
 </script>
